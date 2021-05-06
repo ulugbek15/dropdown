@@ -19,9 +19,11 @@ body{
 }
 .menu{
     display: flex;
+
 }
 .menu-item{
     list-style-type: none;
+    /* transition: hover 5s ease all; */
 }
 .menu-link{
     border: 1px solid #999;
@@ -44,4 +46,32 @@ body{
     padding: 10px 15px;
     border-radius: 5px;
     border: 1px solid #888;
+}
+
+.sub-menu-link-wrapp:hover .sub-menu{
+    display: block;
+}
+.sub-menu{
+    display: none;
+    position: absolute;
+    left: -10px;
+    top: 30px;
+    list-style-type: none;
+}
+/* .menu-item{
+    position: relative;
+    /* left: 0; */
+/* }  */
+.sub-menu-link-wrapp{
+    position: relative;
+}
+
+.sub-menu-link{
+    display: inline-block;
+    width: 150px;
+    border-bottom: 1px solid red;
+    text-decoration: none;
+    background-color: limegreen;
+    color: #fff;
+    padding: 10px;
 }
